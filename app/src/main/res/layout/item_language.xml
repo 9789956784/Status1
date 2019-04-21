@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <RelativeLayout
+        android:layout_margin="2dp"
+        android:background="@drawable/gradient_dialog_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/relativeLayout_main"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:background="#333"
+                android:id="@+id/image_view_iten_language"
+                android:padding="5dp"
+                android:src="@drawable/ic_global"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+            <TextView
+                android:id="@+id/text_view_item_language"
+                android:textStyle="bold"
+                android:gravity="left|center"
+                android:textSize="19dp"
+                android:layout_marginLeft="70dp"
+                android:textColor="@color/white"
+                android:text="Language 1 "
+                android:layout_width="wrap_content"
+                android:layout_height="60dp" />
+            <CheckedTextView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/checked_text_item"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                android:paddingRight="0dp"
+                android:checkMarkTint="@color/white"
+                android:paddingBottom="10dp"
+                ></CheckedTextView>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

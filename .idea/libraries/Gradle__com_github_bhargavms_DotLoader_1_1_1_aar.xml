@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.bhargavms:DotLoader:1.1.1@aar">
+    <CLASSES>
+      <root url="jar://$APPLICATION_HOME_DIR$/gradle/gradle-5.3.1/caches/transforms-1/files-1.1/DotLoader-1.1.1.aar/0110f57ee3a330babe0d689aeb13bf96/jars/classes.jar!/" />
+      <root url="file://$APPLICATION_HOME_DIR$/gradle/gradle-5.3.1/caches/transforms-1/files-1.1/DotLoader-1.1.1.aar/0110f57ee3a330babe0d689aeb13bf96/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

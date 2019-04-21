@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.shalskar:PeekAndPop:1.1.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$APPLICATION_HOME_DIR$/gradle/gradle-5.3.1/caches/transforms-1/files-1.1/PeekAndPop-1.1.0.aar/8ca8fc4031443fe7b93b42ce140a6041/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$APPLICATION_HOME_DIR$/gradle/gradle-5.3.1/caches/transforms-1/files-1.1/PeekAndPop-1.1.0.aar/8ca8fc4031443fe7b93b42ce140a6041/jars/classes.jar!/" />
+      <root url="file://$APPLICATION_HOME_DIR$/gradle/gradle-5.3.1/caches/transforms-1/files-1.1/PeekAndPop-1.1.0.aar/8ca8fc4031443fe7b93b42ce140a6041/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+        <LinearLayout
+            android:background="@drawable/bg_dialog"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@drawable/gradient_dialog"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/LinearLayout"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/image_view_login"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:tint="@color/white"
+                    android:padding="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    app:srcCompat="@drawable/ic_g_translate"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp" />
+                <TextView
+                    android:textColor="#ffff"
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/select_language"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/relative1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/LinearLayout">
+                <android.support.v7.widget.RecyclerView
+                    android:visibility="gone"
+                    android:id="@+id/selection_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+                <com.leo.simplearcloader.SimpleArcLoader
+                    android:layout_margin="40dp"
+                    android:id="@+id/simple_arc_loader_lang"
+                    android:visibility="gone"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    app:arc_colors="@array/colors_load_img"
+                    app:arc_style="simple_arc"
+                    app:arc_speed="medium"
+                    app:arc_margin="3dp">
+                </com.leo.simplearcloader.SimpleArcLoader>
+        </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+                <Button
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"                    android:background="@drawable/gradient_dialog_btn"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="CANCEL"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_back_langauge" />
+                <Button
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/gradient_dialog_btn"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="SELECT"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_select_langauge" />
+        </LinearLayout>
+</LinearLayout>

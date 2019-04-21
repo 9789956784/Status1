@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.virmana.status_app_all">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <protected-broadcast android:name="android.intent.action.MEDIA_MOUNTED" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name="com.virmana.status_app_all.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <meta-data
+            android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME"
+            android:value="com.google.android.exoplayer2.ext.cast.DefaultCastOptionsProvider" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.virmana.status_app_all.services.FirebaseIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.virmana.status_app_all.services.NotifFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.virmana.status_app_all.ui.Activities.SlideActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.virmana.status_app_all.ui.Activities.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.virmana.status_app_all.ui.Activities.CategoryActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.virmana.status_app_all.ui.Activities.VideoActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.virmana.status_app_all.ui.Activities.PermissionActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.virmana.status_app_all.ui.Activities.UploadVideoActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.virmana.status_app_all.ui.Activities.LoginActivity"
+            android:theme="@style/Theme.UserDialog" />
+        <activity
+            android:name="com.virmana.status_app_all.ui.Activities.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name="com.virmana.status_app_all.ui.Activities.SupportActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.virmana.status_app_all.ui.Activities.PolicyActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.virmana.status_app_all.ui.Activities.SettingsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.virmana.status_app_all.ui.Activities.SearchActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.virmana.status_app_all.ui.Activities.LanguageActivity"
+            android:theme="@style/Theme.UserDialog" />
+        <activity
+            android:name="com.virmana.status_app_all.ui.Activities.AllCategoryActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.virmana.status_app_all.ui.Activities.UserActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.virmana.status_app_all.ui.Activities.EditActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.virmana.status_app_all.ui.Activities.FullscreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_fullscreen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.virmana.status_app_all.ui.Activities.WhatsAppActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.virmana.status_app_all.ui.Activities.ImageActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.virmana.status_app_all.ui.Activities.GifActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.virmana.status_app_all.ui.Activities.QuoteActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.virmana.status_app_all.ui.Activities.UploadImageActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.virmana.status_app_all.ui.Activities.UploadGifActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.virmana.status_app_all.ui.Activities.UploadQuoteActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.virmana.status_app_all.ui.Activities.PayoutsActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name="com.virmana.status_app_all.ui.Activities.EarningActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name="com.virmana.status_app_all.ui.Activities.RequestActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+    </application>
+
+</manifest>

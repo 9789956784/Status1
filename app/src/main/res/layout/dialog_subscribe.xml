@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    >
+    <RelativeLayout
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_dialog"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:gravity="center"
+            android:id="@+id/LinearLayout"
+            android:background="@drawable/gradient_dialog"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:tint="@color/white"
+                app:srcCompat="@drawable/ic_subscribe"
+                android:layout_width="200dp"
+                android:layout_height="200dp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_below="@+id/LinearLayout"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/primary_text_light"
+                android:padding="13dp"
+                android:text="@string/description_subsribte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="@drawable/bg_round_gopro"
+                    android:padding="8dp"
+                    app:srcCompat="@drawable/ic_stop_ads"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_height="45dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    >
+                    <TextView
+                        android:textSize="20dp"
+                        android:gravity="center|left"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary_text_light"
+                        android:text="@string/dialog_text_no_ads_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                    <TextView
+                        android:textSize="10dp"
+                        android:gravity="center|left"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary_text_light"
+                        android:text="@string/dialog_text_no_ads_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/gradient_dialog_btn"
+            android:layout_width="200dp"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/text_view_go_pro"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:text="@string/subscribe"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

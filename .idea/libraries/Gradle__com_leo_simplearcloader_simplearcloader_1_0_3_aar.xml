@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.leo.simplearcloader:simplearcloader:1.0.3@aar">
+    <CLASSES>
+      <root url="file://$APPLICATION_HOME_DIR$/gradle/gradle-5.3.1/caches/transforms-1/files-1.1/simplearcloader-1.0.3.aar/44bcae22988fc5b8e46b329f979075b0/res" />
+      <root url="jar://$APPLICATION_HOME_DIR$/gradle/gradle-5.3.1/caches/transforms-1/files-1.1/simplearcloader-1.0.3.aar/44bcae22988fc5b8e46b329f979075b0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$APPLICATION_HOME_DIR$/gradle/gradle-5.3.1/caches/modules-2/files-2.1/com.leo.simplearcloader/simplearcloader/1.0.3/a834f8819cca452f8ff8be052b36952165a3ca34/simplearcloader-1.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
